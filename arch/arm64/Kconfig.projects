@@ -1,3 +1,45 @@
+config SEC_X1Q_PROJECT
+	select SLUB_DEBUG if SEC_FACTORY
+	select SLUB_DEBUG_ON if SEC_FACTORY
+	default n
+	bool "Samsung X1Q Project"
+	help
+	  Support for Samsung X1Q Project
+
+config MACH_X1Q_CHN_OPEN
+	default n
+	bool "Samsung X1Q CHN OPEN"
+	help
+	  Support for Samsung X1Q CHN OPEN device.
+
+config MACH_X1Q_CHN_HKX
+	select MACH_X1Q_CHN_OPEN
+	default n
+	bool "Samsung X1Q CHN HKX"
+	help
+	  Support for Samsung X1Q CHN HKX device.
+
+config SEC_Y2Q_PROJECT
+	select SLUB_DEBUG if SEC_FACTORY
+	select SLUB_DEBUG_ON if SEC_FACTORY
+	default n
+	bool "Samsung Y2Q Project"
+	help
+	  Support for Samsung Y2Q Project
+
+config MACH_Y2Q_CHN_OPEN
+	default n
+	bool "Samsung Y2Q CHN OPEN"
+	help
+	  Support for Samsung Y2Q CHN OPEN device.
+
+config MACH_Y2Q_CHN_HKX
+	select MACH_Y2Q_CHN_OPEN
+	default n
+	bool "Samsung Y2Q CHN HKX"
+	help
+	  Support for Samsung Y2Q CHN HKX device.
+
 config SEC_Z3Q_PROJECT
 	select SLUB_DEBUG if SEC_FACTORY
 	select SLUB_DEBUG_ON if SEC_FACTORY
